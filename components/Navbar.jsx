@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
+import { IoChevronDown } from "react-icons/io5";
 import {
   FaSchool,
   FaBriefcase,
@@ -49,8 +50,9 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-7">
 
-          <button className="text-gray-700 hover:text-blue-600 transition">
-            EN
+          <button className="flex items-center gap-2 text-[18px] font-medium text-[#3E3E3E] hover:text-blue-600 transition">
+            <span>EN</span>
+            <IoChevronDown size={20} />
           </button>
 
           <motion.button
